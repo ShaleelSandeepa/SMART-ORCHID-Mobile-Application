@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "535885721941",
+    "project_id": "smartorchid-4a3c3",
+    "storage_bucket": "smartorchid-4a3c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535885721941:android:10f71567540d5a55dfffdc",
+        "android_client_info": {
+          "package_name": "com.designproject.smartorchid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535885721941-vgdvhqmv8stqsj8dif5lv0qvr5fbnqll.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.designproject.smartorchid",
+            "certificate_hash": "3d6ee0bd273bd678b78dd5a6449bb50e0e929932"
+          }
+        },
+        {
+          "client_id": "535885721941-eg3b6ln37skmvamefmgtjmroj75pa5rs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKY6BuRgRLe-ohNbLjM9ewYJSqCkj65GA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535885721941-eg3b6ln37skmvamefmgtjmroj75pa5rs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SmartOrchid" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/DodgerBlue</item>
+        <item name="colorPrimaryVariant">@color/Blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:statusBarColor" >?attr/colorOnPrimary</item>
+<!--        <item name="android:statusBarColor">@android:color/white</item>-->
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.SmartOrchid.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/LighterBlue2</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearanceCurrent" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme.SmartOrchid.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.SmartOrchid.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    
+    <style name="colored_checkbox" parent="Theme.AppCompat.DayNight">
+        <item name="colorAccent">@color/DodgerBlue</item>
+    </style>
+
+
+<!--    <style name="CustomActionBar" parent="@android:style/Widget.ActionBar">-->
+<!--        <item name="android:titleTextStyle">@style/ActionBarTitleText</item>-->
+<!--    </style>-->
+
+<!--    <style name="ActionBarTitleText" parent="@android:style/TextAppearance">-->
+<!--        <item name="android:textColor">@color/DodgerBlue</item>-->
+<!--    </style>-->
+
+</resources>

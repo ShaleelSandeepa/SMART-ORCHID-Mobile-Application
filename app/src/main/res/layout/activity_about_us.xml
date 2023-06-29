@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AboutUsActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxHeight="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginBottom="85dp"
+                        android:background="@drawable/card_color2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <ImageView
+                            android:id="@+id/profilePicture"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginStart="122dp"
+                            android:layout_marginEnd="122dp"
+                            android:layout_marginTop="10dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/shop_photo"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/userName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:padding="0dp"
+                            android:scaleType="centerCrop"
+                            android:text="SMART ORCHID"
+                            android:textColor="@color/white"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/profilePicture"
+                            app:layout_constraintStart_toStartOf="@+id/profilePicture"
+                            app:layout_constraintTop_toBottomOf="@+id/profilePicture" />
+
+                        <TextView
+                            android:id="@+id/userEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:padding="0dp"
+                            android:scaleType="centerCrop"
+                            android:text="bookshoporchid@gmail.com"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="normal"
+                            app:layout_constraintEnd_toEndOf="@+id/userName"
+                            app:layout_constraintStart_toStartOf="@+id/userName"
+                            app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:id="@+id/whiteLinear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="230dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/rounded_searchview"
+                        android:elevation="10dp"
+                        android:gravity="center_horizontal"
+                        android:maxHeight="200dp"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingBottom="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <!-- txtUserFullName -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/DarkBlue"
+                                    android:gravity="fill"
+                                    android:orientation="horizontal"
+                                    android:padding="0dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="1dp"
+                                        android:background="@color/white"
+                                        android:gravity="fill"
+                                        android:orientation="horizontal"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="top"
+                                            android:paddingLeft="0dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="Owner"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="end"
+                                            android:paddingRight="20dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="Mr. D. Leel Indika"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold"
+                                            android:visibility="visible" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <!-- txtUserGender -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/DarkBlue"
+                                    android:gravity="fill"
+                                    android:orientation="horizontal"
+                                    android:padding="0dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="1dp"
+                                        android:background="@color/white"
+                                        android:gravity="fill"
+                                        android:orientation="horizontal"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="top"
+                                            android:paddingLeft="0dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="Address"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="end"
+                                            android:paddingRight="20dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="Orchid Book Shop\nRathgama Junction\nRathgama\nGalle\nSri Lanka"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold"
+                                            android:visibility="visible" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <!-- txtUserMobile -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/DarkBlue"
+                                    android:gravity="fill"
+                                    android:orientation="horizontal"
+                                    android:padding="0dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="1dp"
+                                        android:background="@color/white"
+                                        android:gravity="fill"
+                                        android:orientation="horizontal"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="top"
+                                            android:paddingLeft="0dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="Mobile"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="end"
+                                            android:paddingRight="20dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="+94 76 485 9595"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold"
+                                            android:visibility="visible" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <!-- txtUserTel -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/DarkBlue"
+                                    android:gravity="fill"
+                                    android:orientation="horizontal"
+                                    android:padding="0dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="1dp"
+                                        android:background="@color/white"
+                                        android:gravity="fill"
+                                        android:orientation="horizontal"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="top"
+                                            android:paddingLeft="0dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="Active Days"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="end"
+                                            android:paddingRight="20dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="Every weekdays &amp;\nweekends\nExcept special holidays"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold"
+                                            android:visibility="visible" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <!-- txtUserAddress -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/DarkBlue"
+                                    android:gravity="fill"
+                                    android:orientation="horizontal"
+                                    android:padding="0dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="1dp"
+                                        android:background="@color/white"
+                                        android:gravity="fill"
+                                        android:orientation="horizontal"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="top"
+                                            android:paddingLeft="0dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="Active Time"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="end"
+                                            android:paddingRight="20dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="8.00 a.m. - 8.00 p.m."
+                                            android:textSize="16dp"
+                                            android:textStyle="bold"
+                                            android:visibility="visible" />
+
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <!-- txtUserPostalCode -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/DarkBlue"
+                                    android:gravity="fill"
+                                    android:orientation="horizontal"
+                                    android:padding="0dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="1dp"
+                                        android:background="@color/white"
+                                        android:gravity="fill"
+                                        android:orientation="horizontal"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="top"
+                                            android:paddingLeft="0dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="Postal code"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="end"
+                                            android:paddingRight="20dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="80260"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold"
+                                            android:visibility="visible" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="0dp"
+                    android:scaleType="centerCrop"
+                    android:text="@string/description"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

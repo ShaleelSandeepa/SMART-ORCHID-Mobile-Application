@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProfileActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:id="@+id/linearMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="85dp"
+                    android:background="@drawable/card_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <ImageView
+                        android:id="@+id/profilePicture"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="122dp"
+                        android:layout_marginEnd="122dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_user2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/profilePictureEdit"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="@+id/profilePicture"
+                        app:layout_constraintStart_toEndOf="@+id/profilePicture" />
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:text="Name"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/profilePicture"
+                        app:layout_constraintStart_toStartOf="@+id/profilePicture"
+                        app:layout_constraintTop_toBottomOf="@+id/profilePicture" />
+
+                    <TextView
+                        android:id="@+id/userEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:text="Email"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="@+id/userName"
+                        app:layout_constraintStart_toStartOf="@+id/userName"
+                        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/whiteLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/rounded_searchview"
+                    android:elevation="10dp"
+                    android:gravity="center_horizontal"
+                    android:maxHeight="200dp"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+<!--                    <ScrollView-->
+<!--                        android:id="@+id/scrollView3"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:maxHeight="100dp"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:layout_constraintHorizontal_bias="0.0"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent">-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp">
+
+<!--                        <ScrollView-->
+<!--                            android:id="@+id/scrollViewWhiteLinear"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent">-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <!-- txtUserFullName -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/DarkBlue"
+                                    android:gravity="fill"
+                                    android:orientation="horizontal"
+                                    android:padding="0dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="1dp"
+                                        android:background="@color/white"
+                                        android:gravity="fill"
+                                        android:orientation="horizontal"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="top"
+                                            android:paddingLeft="0dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="Full Name"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+
+                                        <TextView
+                                            android:id="@+id/txtUserFullName"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="end"
+                                            android:paddingRight="20dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="-"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold"
+                                            android:visibility="visible" />
+
+                                        <EditText
+                                            android:id="@+id/edtUserFullName"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="0dp"
+                                            android:gravity="end"
+                                            android:hint="Enter full name"
+                                            android:textSize="16dp"
+                                            android:visibility="gone" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <!-- txtUserGender -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/DarkBlue"
+                                    android:gravity="fill"
+                                    android:orientation="horizontal"
+                                    android:padding="0dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="1dp"
+                                        android:background="@color/white"
+                                        android:gravity="fill"
+                                        android:orientation="horizontal"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="top"
+                                            android:paddingLeft="0dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="Gender"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+
+                                        <TextView
+                                            android:id="@+id/txtUserGender"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="end"
+                                            android:paddingRight="20dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="-"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold"
+                                            android:visibility="visible" />
+
+                                        <EditText
+                                            android:id="@+id/edtUserGender"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="0dp"
+                                            android:gravity="end"
+                                            android:hint="Enter gender male or female"
+                                            android:textSize="16dp"
+                                            android:visibility="gone" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <!-- txtUserMobile -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/DarkBlue"
+                                    android:gravity="fill"
+                                    android:orientation="horizontal"
+                                    android:padding="0dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="1dp"
+                                        android:background="@color/white"
+                                        android:gravity="fill"
+                                        android:orientation="horizontal"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="top"
+                                            android:paddingLeft="0dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="Mobile"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+
+                                        <TextView
+                                            android:id="@+id/txtUserMobile"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="end"
+                                            android:paddingRight="20dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="-"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold"
+                                            android:visibility="visible" />
+
+                                        <EditText
+                                            android:id="@+id/edtUserMobile"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="0dp"
+                                            android:gravity="end"
+                                            android:hint="Enter registered Mobile number"
+                                            android:textSize="16dp"
+                                            android:visibility="gone" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <!-- txtUserTel -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/DarkBlue"
+                                    android:gravity="fill"
+                                    android:orientation="horizontal"
+                                    android:padding="0dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="1dp"
+                                        android:background="@color/white"
+                                        android:gravity="fill"
+                                        android:orientation="horizontal"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="top"
+                                            android:paddingLeft="0dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="Tel"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+
+                                        <TextView
+                                            android:id="@+id/txtUserTel"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="end"
+                                            android:paddingRight="20dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="-"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold"
+                                            android:visibility="visible" />
+
+                                        <EditText
+                                            android:id="@+id/edtUserTel"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="0dp"
+                                            android:gravity="end"
+                                            android:hint="Enter Telephone"
+                                            android:textSize="16dp"
+                                            android:visibility="gone" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <!-- txtUserAddress -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/DarkBlue"
+                                    android:gravity="fill"
+                                    android:orientation="horizontal"
+                                    android:padding="0dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="1dp"
+                                        android:background="@color/white"
+                                        android:gravity="fill"
+                                        android:orientation="horizontal"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="top"
+                                            android:paddingLeft="0dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="Address"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+
+                                        <TextView
+                                            android:id="@+id/txtUserAddress"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="end"
+                                            android:paddingRight="20dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="-"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold"
+                                            android:visibility="visible" />
+
+                                        <EditText
+                                            android:id="@+id/edtUserAddress"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="0dp"
+                                            android:gravity="end"
+                                            android:hint="Enter Address"
+                                            android:textSize="16dp"
+                                            android:visibility="gone" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <!-- txtUserPostalCode -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/DarkBlue"
+                                    android:gravity="fill"
+                                    android:orientation="horizontal"
+                                    android:padding="0dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="1dp"
+                                        android:background="@color/white"
+                                        android:gravity="fill"
+                                        android:orientation="horizontal"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="top"
+                                            android:paddingLeft="0dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="Postal code"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+
+                                        <TextView
+                                            android:id="@+id/txtUserPostalCode"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="end"
+                                            android:paddingRight="20dp"
+                                            android:scaleType="centerCrop"
+                                            android:text="-"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold"
+                                            android:visibility="visible" />
+
+                                        <EditText
+                                            android:id="@+id/edtUserPostalCode"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="0dp"
+                                            android:gravity="end"
+                                            android:hint="Enter postal code"
+                                            android:textSize="16dp"
+                                            android:visibility="gone" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+<!--                        </ScrollView>-->
+
+                    </LinearLayout>
+
+<!--                    </ScrollView>-->
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/editDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button2"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Edit Details"
+            android:textColor="@color/DodgerBlue"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
